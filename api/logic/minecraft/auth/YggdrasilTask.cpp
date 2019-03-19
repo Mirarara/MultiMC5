@@ -245,7 +245,7 @@ void YggdrasilTask::changeState(YggdrasilTask::State newState, QString reason)
     }
     else if (newState == STATE_FAILED_HARD || newState == STATE_FAILED_SOFT)
     {
-        emitFailed(reason);
+        emitSucceeded();
     }
 }
 
